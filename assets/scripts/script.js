@@ -1,16 +1,20 @@
-window.addEventListener('scroll', () => {
-    let header = document.querySelector('#header');
-    let transitionArea = document.querySelector('#about');
-    let transitionBorder = document.querySelector('.hello-message');
+const header = document.querySelector('#header');
+const home = document.querySelector('#home');
+const about = document.querySelector('#about');
+const navigationList = document.querySelectorAll('.navigation-list li');
+const helloMessage = document.querySelector('.hello-message');
+const helloSubtitle = document.querySelector('.hello-subtitle');
+const helloDownArrow = document.querySelector('.hello-down-arrow');
 
-    if(window.scrollY <= transitionBorder.offsetTop) {
+window.addEventListener('scroll', () => {
+
+    if(window.scrollY <= helloMessage.offsetTop) {
         header.style.boxShadow = 'none';
-        console.log('oi')
     } else {
         header.style.boxShadow = '0px 0px 5px rgba(0, 0, 0, 0.1)';
     }
 
-        if(window.scrollY >= transitionArea.offsetTop) {
+        if(window.scrollY >= about.offsetTop) {
         header.classList.add('header-background-2');
         header.classList.remove('header-background-1');
     } else {
@@ -19,3 +23,30 @@ window.addEventListener('scroll', () => {
     }
     
 })
+
+let windowHeight = document.documentElement.clientHeight;
+home.style.height = windowHeight + 'px';
+window.addEventListener('resize', () => {
+    let newWindowHeight = document.documentElement.clientHeight;
+    home.style.height = newWindowHeight + 'px';
+});
+
+const scrollTo = (element) => {
+    document.querySelector(element).scrollIntoView({behavior: "smooth"});
+}
+
+navigationList.forEach((navig) => navig.addEventListener('click', () => scrollTo(navig.getAttribute('href'))))
+
+const writeMessage = () => {
+
+    const helloMessageArray = helloMessage.innerHTML.split('');
+    helloMessageArray.forEach((letter, i) => {
+        helloMessage.innerHTML = '';
+        setTimeout(() => {
+            helloMessage.innerHTML += letter;
+        }, 90 * i);
+    })
+}
+writeMessage();
+
+helloDownArrow.addEventListener('click', () => scrollTo('#about'));

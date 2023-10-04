@@ -16,6 +16,14 @@
   color: var(--color-2);
 }
 
+/* .hello-message::after {
+  content: "|";
+  margin-left: 2px;
+  opacity: 1;
+  animation: blink 0.7s infinite;
+  color: var(--color-3);
+} */
+
 .hello-subtitle {
   color: var(--color-3);
 }

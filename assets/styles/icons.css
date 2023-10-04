@@ -2,6 +2,14 @@
   margin-top: 50px;
   font-size: 5rem !important;
   color: var(--color-2);
-  animation: arrow-up-down 1.5s infinite;
+  animation: arrow-up-down 0.9s infinite;
   user-select: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hello-down-arrow:hover {
+  animation: none;
+  margin-top: 0px;
+  color: var(--color-3);
 }

@@ -62,12 +62,17 @@ header li:hover {
   border-bottom: 2px solid black;
 }
 
-header li a {
+header li {
+  cursor: pointer;
   color: var(--color-2);
 }
 
+header li:hover {
+  color: var(--color-3);
+}
+
 /* MAIN */
-main {
+#home {
   height: 100vh;
   width: 100%;
   display: flex;
@@ -81,11 +86,11 @@ main {
   );
 }
 
-main h1 {
+#home h1 {
   font-size: 5rem;
 }
 
-main h2 {
+#home h2 {
   font-size: 2.5rem;
 }
 
@@ -200,4 +205,37 @@ main h2 {
 
 #contact {
   background-color: rgb(244, 244, 244);
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.contact-list figure,
+.contact-list img {
+  width: 40px;
+  height: 40px;
+}
+
+.contact-type {
+  font-weight: bold;
+  color: var(--color-2);
+}
+
+.contact-list a {
+  color: var(--color-3);
+  transition: 0.3s;
+}
+
+.contact-list a:hover {
+  color: rgb(73, 96, 201);
+  text-decoration: underline;
+}
+
+.contact-email {
+  color: rgb(67, 67, 67);
+  font-style: italic;
 }
