@@ -1,27 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alcides Gabriel | Portfolio</title>
-    <link rel="stylesheet" href="./assets/styles/style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Skills</li>
-                <li>Projects</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,700,0,0"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <nav class="container">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
-    <main>
-        <h1>Hello, i'm Alcides Gabriel</h1>
-        <h2>Back-End && Front-End Developer</h2>
+    <main id="home" class="page-section">
+      <h1 class="hello-message">Hello, i'm Alcides Gabriel</h1>
+      <h2 class="hello-subtitle">Back-End && Front-End Developer</h2>
+      <span class="material-symbols-outlined hello-down-arrow"
+        >stat_minus_2</span
+      >
     </main>
-</body>
+    <article id="about" class="container page-section">
+      <section>
+        <h1 class="section-title">About Me</h1>
+        <p class="about-paragraph">
+          Hello! My name is Alcides Gabriel, i'm from Brazil, and i am a
+          back-end developer with experience in API and web system development,
+          using Java and PHP as programming languages. I have been working
+          professionally as a freelancer since January 2023. Despite the
+          emphasis on back-end, I also have strong knowledge in front-end
+          technologies, such as developing Single Page Applications (SPAs) with
+          React and JavaScript, as well as styling websites and web systems with
+          CSS3 and Bootstrap.
+        </p>
+      </section>
+      <figure>
+        <img
+          src="./assets/images/developer_image.svg"
+          alt=""
+          class="dev-image"
+        />
+      </figure>
+    </article>
+    <article id="skills" class="page-section">
+      <div class="container">
+        <h1 class="section-title">Skills</h1>
+        <ul class="skill-list">
+          <li>
+            <img
+              src="./assets/images/icons/java.svg"
+              alt="Java"
+              class="skill-icon"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/images/icons/springboot2.svg"
+              alt="Spring Boot"
+              class="skill-icon"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/images/icons/php.svg"
+              alt="PHP"
+              class="skill-icon"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/images/icons/react.svg"
+              alt="ReactJS"
+              class="skill-icon"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/images/icons/javascript.svg"
+              alt="JavaScript"
+              class="skill-icon"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/images/icons/css3.svg"
+              alt="CSS3"
+              class="skill-icon"
+            />
+          </li>
+        </ul>
+      </div>
+    </article>
+    <article id="projects" class="page-section">
+      <div class="container">
+        <h1 class="section-title">Projects</h1>
+        <ul class="projects-grid">
+          <li>
+            <section>
+              <figure>
+                <div class="img-sample"></div>
+              </figure>
+              <h1>Projeto 1</h1>
+              <h2>Java, React</h2>
+              <p>dsadsadsad</p>
+            </section>
+            <aside>imagem</aside>
+          </li>
+          <li>
+            <section>
+              <figure>
+                <div class="img-sample"></div>
+              </figure>
+              <h1>Projeto 1</h1>
+              <h2>Java, React</h2>
+              <p>dsadsadsad</p>
+            </section>
+            <aside>imagem</aside>
+          </li>
+          <li>
+            <section>
+              <figure>
+                <div class="img-sample"></div>
+              </figure>
+              <h1>Projeto 1</h1>
+              <h2>Java, React</h2>
+              <p>dsadsadsad</p>
+            </section>
+            <aside>imagem</aside>
+          </li>
+        </ul>
+      </div>
+    </article>
+    <article id="contact" class="container page-section">
+      <h1 class="section-title">Contact</h1>
+    </article>
+    <script src="./assets/scripts/script.js"></script>
+  </body>
 </html>

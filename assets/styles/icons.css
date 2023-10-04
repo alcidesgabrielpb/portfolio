@@ -1,0 +1,7 @@
+.hello-down-arrow {
+  margin-top: 50px;
+  font-size: 5rem !important;
+  color: var(--color-2);
+  animation: arrow-up-down 1.5s infinite;
+  user-select: none;
+}
