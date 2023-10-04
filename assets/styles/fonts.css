@@ -19,3 +19,20 @@
 .hello-subtitle {
   color: var(--color-3);
 }
+
+/* PROJECTS */
+
+.project-description h1 {
+  font-size: 1.2rem;
+  color: var(--color-2);
+}
+
+.project-description h2 {
+  margin-top: -8px;
+  font-size: 0.8rem;
+  color: rgb(47, 47, 47);
+}
+
+.project-description p {
+  color: rgb(80, 80, 80);
+}
