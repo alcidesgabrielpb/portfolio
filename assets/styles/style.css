@@ -50,28 +50,20 @@ header {
   background-color: rgb(255, 255, 255);
 }
 
-header ul {
+.navigation-list {
   display: flex;
   justify-content: right;
   gap: 10px;
 }
 
-header li {
-  border-bottom: 2px solid transparent;
+.navigation-list li {
   transition: 0.3s;
   font-weight: bold;
-}
-
-header li:hover {
-  border-bottom: 2px solid black;
-}
-
-header li {
   cursor: pointer;
   color: var(--color-2);
 }
 
-header li:hover {
+.navigation-list li:hover {
   color: var(--color-3);
 }
 
