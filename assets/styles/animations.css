@@ -17,3 +17,29 @@
     opacity: 0;
   }
 }
+
+.animate {
+  opacity: 0;
+  transition: 1s;
+}
+
+.animate.show {
+  transform: translate(0);
+  opacity: 1;
+}
+
+.appearing-left {
+  transform: translateX(-100px);
+}
+
+.appearing-right {
+  transform: translateX(100px);
+}
+
+.appearing-top {
+  transform: translateY(-100px);
+}
+
+.appearing-bottom {
+  transform: translateY(100px);
+}

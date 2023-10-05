@@ -10,6 +10,6 @@
 
 .hello-down-arrow:hover {
   animation: none;
-  margin-top: 0px;
+  /* margin-top: 0px; */
   color: var(--color-3);
 }

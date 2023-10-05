@@ -110,8 +110,11 @@ header li:hover {
   padding: 200px 0;
 }
 
-.dev-image {
-  height: 300px;
+.profile-picture {
+  width: 370px;
+  height: 370px;
+  object-fit: cover;
+  border-radius: 50%;
   animation: arrow-up-down 3s infinite;
 }
 
