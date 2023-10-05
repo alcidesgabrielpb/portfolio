@@ -8,6 +8,10 @@
   margin: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 ul {
   list-style: none;
 }
@@ -75,10 +79,7 @@ header li:hover {
 #home {
   height: 100vh;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
   background-image: linear-gradient(
     90deg,
     rgba(233, 233, 233, 1) 0%,
@@ -86,12 +87,13 @@ header li:hover {
   );
 }
 
-#home h1 {
-  font-size: 5rem;
-}
-
-#home h2 {
-  font-size: 2.5rem;
+.home-area {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ABOUT */
@@ -102,11 +104,11 @@ header li:hover {
   color: rgb(72, 72, 72);
 }
 
-#about {
+.about-area {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 50px;
   padding: 200px 0;
 }
 
@@ -123,7 +125,7 @@ header li:hover {
   background-color: rgb(244, 244, 244);
 }
 
-#skills ul {
+.skill-list {
   display: grid;
   grid-template-columns: repeat(3, auto);
   gap: 50px;
@@ -172,7 +174,8 @@ header li:hover {
 
 .projects-grid {
   display: flex;
-  column-gap: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
   justify-content: center;
 }
 
@@ -241,4 +244,118 @@ header li:hover {
 .contact-email {
   color: rgb(67, 67, 67);
   font-style: italic;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1250px) {
+  .container {
+    max-width: 1000px;
+  }
+
+  .profile-picture {
+    width: 250px;
+    height: 250px;
+  }
+
+  .hello-message {
+    font-size: 4rem;
+  }
+
+  .hello-subtitle {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1050px) {
+  .container {
+    max-width: 850px;
+  }
+
+  .about-paragraph {
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    max-width: 750px;
+  }
+
+  .page-section {
+    padding: 60px 0;
+  }
+
+  .home-area {
+    align-items: start;
+    padding-left: 10px;
+  }
+
+  .hello-down-arrow {
+    align-self: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    max-width: 650px;
+  }
+
+  .about-area {
+    flex-direction: column;
+    gap: 60px;
+    padding: 100px 0;
+  }
+
+  .about-paragraph {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    max-width: 550px;
+  }
+
+  .skill-list {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 450px;
+  }
+
+  .hello-message {
+    font-size: 3.4rem;
+  }
+
+  .hello-subtitle {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    max-width: 380px;
+  }
+
+  .navigation-list {
+    justify-content: center;
+  }
+
+  .header .container {
+    margin: 0 !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    max-width: 350px;
+  }
+
+  .skill-list {
+    grid-template-columns: auto;
+  }
 }
